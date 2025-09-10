@@ -17,9 +17,13 @@ This project demonstrates text preprocessing, feature extraction, model training
 ## 📂 Project Structure  
 
 hate-speech-detection/
+
   -- app.py # Streamlit web app
+
   -- hate_speech_detection.ipynb # Colab notebook (training & analysis)
+
   -- requirements.txt # Dependencies
+  
   -- README.md # Project documentation
 
 ---
