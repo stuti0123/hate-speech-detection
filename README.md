@@ -17,13 +17,10 @@ This project demonstrates text preprocessing, feature extraction, model training
 ## 📂 Project Structure  
 
 hate-speech-detection/
-│-- app.py # Streamlit web app
-│-- hate_speech_detection.ipynb # Colab notebook (training & analysis)
-│-- requirements.txt # Dependencies
-│-- README.md # Project documentation
-
-yaml
-Copy code
+  -- app.py # Streamlit web app
+  -- hate_speech_detection.ipynb # Colab notebook (training & analysis)
+  -- requirements.txt # Dependencies
+  -- README.md # Project documentation
 
 ---
 
@@ -41,48 +38,55 @@ Copy code
    ```bash
    streamlit run app.py
 
-🌐 Deployment
-This app can be deployed easily on Streamlit Cloud:
+---
 
-Upload your project repo to GitHub
+## 🌐 Deployment
+ This app can be deployed easily on Streamlit Cloud:
 
-Sign in to Streamlit Cloud and connect your repo
+     Upload your project repo to GitHub
 
-Deploy the app with one click
+     Sign in to Streamlit Cloud and connect your repo
 
-🔗 Live Demo Link: (Add once deployed)
+     Deploy the app with one click
 
-📊 Dataset
-Dataset used: Hate Speech and Offensive Language Dataset
+---
 
-7 columns (including tweet, class, etc.)
+## 🔗 Live Demo Link: (https://stuti0123-hate-speech-detection-app-qx4mxt.streamlit.app/)
 
-3 Labels:
+---
 
-0 → Hate Speech
+## 📊 Dataset
+ Dataset used: Hate Speech and Offensive Language Dataset
 
-1 → Offensive Language
+ 7 columns (including tweet, class, etc.)
 
-2 → Neither
+ 3 Labels:
 
-📈 Model Performance
-Accuracy: ~90% with CountVectorizer + Logistic Regression
+     0 → Hate Speech
 
-TF-IDF also tested, with slightly different performance
+     1 → Offensive Language
 
-Confusion matrix and classification reports included
+     2 → Neither
 
-✨ Future Improvements
-Use Deep Learning models (LSTMs, BERT) for better accuracy
+---
 
-Add data visualizations of predictions in the web app
+## 📈 Model Performance
+   Accuracy: ~90% with CountVectorizer + Logistic Regression
 
-Enhance UI/UX with advanced Streamlit components
+   TF-IDF also tested, with slightly different performance
 
-Integrate with APIs for real-time hate speech monitoring
+   Confusion matrix and classification reports included
 
-🤝 Contributing
-Contributions are welcome! Feel free to open issues and submit pull requests.
+---
 
-📜 License
-This project is licensed under the MIT License.
+## ✨ Future Improvements
+  - Use Deep Learning models (LSTMs, BERT) for better accuracy
+
+  - Add data visualizations of predictions in the web app
+
+  - Enhance UI/UX with advanced Streamlit components
+
+  - Integrate with APIs for real-time hate speech monitoring
+
+Thank You!
+ ---

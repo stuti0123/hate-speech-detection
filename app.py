@@ -1,4 +1,3 @@
-# app.py
 import streamlit as st
 import pickle
 import pandas as pd
@@ -6,9 +5,6 @@ import matplotlib.pyplot as plt
 from wordcloud import WordCloud
 import seaborn as sns
 
-# =========================
-# Load model + vectorizer
-# =========================
 @st.cache_resource
 def load_model():
     model = pickle.load(open("multi_hate_model.pkl", "rb"))
@@ -17,13 +13,11 @@ def load_model():
 
 model, vectorizer = load_model()
 
-# Label mapping
 label_map = {0: "Hate Speech", 1: "Offensive Language", 2: "Neither"}
 colors = {"Hate Speech": "red", "Offensive Language": "orange", "Neither": "green"}
 
-# =========================
+
 # Streamlit UI
-# =========================
 st.set_page_config(page_title="Hate Speech Classifier", page_icon="🚨", layout="wide")
 
 st.title("🚨 Multi-class Hate/Offensive Language Detector")
@@ -38,9 +32,8 @@ st.markdown(
     """
 )
 
-# =========================
+
 # User Input
-# =========================
 text = st.text_area("✍️ Enter text to classify:")
 
 if st.button("Classify"):
@@ -56,9 +49,8 @@ if st.button("Classify"):
     else:
         st.warning("⚠️ Please enter some text.")
 
-# =========================
-# Extra: Dataset Insights
-# =========================
+
+# Dataset Insights
 st.sidebar.title("📊 Dataset Explorer")
 
 if st.sidebar.checkbox("Show dataset preview"):
